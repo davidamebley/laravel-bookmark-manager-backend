@@ -64,6 +64,6 @@ class FolderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return Folder::destroy($id);
     }
 }

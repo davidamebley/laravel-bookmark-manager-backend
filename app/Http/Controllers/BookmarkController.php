@@ -65,7 +65,7 @@ class BookmarkController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return Bookmark::destroy($id);
     }
 
     // Get a list of bookmarks that belong to a certain folder
