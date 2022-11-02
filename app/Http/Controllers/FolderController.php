@@ -14,7 +14,7 @@ class FolderController extends Controller
      */
     public function index()
     {
-        return 'folders';
+        return Folder::all();
     }
 
     /**
@@ -25,7 +25,10 @@ class FolderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required'
+        ]);
+        return Folder::create($request->all());
     }
 
     /**
