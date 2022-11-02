@@ -1,7 +1,7 @@
 # Bookmark-Manager Backend Application (with Laravel)
 
 ## Description
-This is a backend for a bookmark management system that exposes a set of REST APIs for the following endpoints:
+This is the backend for a bookmark management system that exposes a set of REST APIs for the following endpoints:
 
 - GET /api/v1/bookmarks: Get a list of bookmarks
 - GET /api/v1/bookmarks/folders/:id: Get a list of bookmarks for a folder
@@ -9,7 +9,6 @@ This is a backend for a bookmark management system that exposes a set of REST AP
 - PUT /api/v1/bookmarks/:id: Update a bookmark
 - DELETE /api/v1/bookmarks/:id: Delete a bookmark
 <br/>
-
 - GET /api/v1/folders: Get a list of folders
 - POST /api/v1/folders: Create a new folder
 - PUT /api/v1/folders/:id: Update a folder
