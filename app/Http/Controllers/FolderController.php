@@ -39,7 +39,7 @@ class FolderController extends Controller
      */
     public function show($id)
     {
-        //
+        return Folder::find($id);
     }
 
     /**
@@ -51,7 +51,9 @@ class FolderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $folder = Folder::find($id);
+        $folder->update($request->all());
+        return $folder;
     }
 
     /**

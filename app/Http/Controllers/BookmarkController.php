@@ -40,7 +40,7 @@ class BookmarkController extends Controller
      */
     public function show($id)
     {
-        //
+        return Bookmark::find($id);
     }
 
     /**
@@ -52,7 +52,9 @@ class BookmarkController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $bookmark = Bookmark::find($id);
+        $bookmark->update($request->all());
+        return $bookmark;
     }
 
     /**
