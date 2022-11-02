@@ -9,6 +9,7 @@ This is the backend for a bookmark management system that exposes a set of REST 
 - PUT /api/v1/bookmarks/:id: Update a bookmark
 - DELETE /api/v1/bookmarks/:id: Delete a bookmark
 <br/>
+
 - GET /api/v1/folders: Get a list of folders
 - POST /api/v1/folders: Create a new folder
 - PUT /api/v1/folders/:id: Update a folder
