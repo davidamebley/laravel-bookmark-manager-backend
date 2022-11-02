@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Bookmark;
 
 class BookmarkController extends Controller
 {
@@ -13,7 +14,7 @@ class BookmarkController extends Controller
      */
     public function index()
     {
-        //
+        return Bookmark::all();     // Get a list of all bookmarks
     }
 
     /**
@@ -59,5 +60,12 @@ class BookmarkController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    // Get a list of bookmarks that belong to a certain folder
+    public function show_folder_bookmarks($folder_id)
+    {
+        // return $folder_id;
+        return Bookmark::where('folder_id', $folder_id)->get(); // all items that match folder_id
     }
 }
